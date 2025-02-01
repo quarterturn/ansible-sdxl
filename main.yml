@@ -1,0 +1,19 @@
+---
+- name: Generate an image using Stable Diffusion XL
+  hosts: localhost
+  tasks:
+    - name: Generate image from a given prompt
+      my_namespace.stable_diffusion.generate_image:
+        model_name: "sdxl-lightning"
+        prompt: "A beautiful sunset over the mountains"
+        guidance_scale: 7.5
+        steps: 35
+        seed: 42
+        width: 1216
+        height: 832
+        output_location: "/tmp/beautiful_sunset"
+        file_type: "png"
+      register: result
+
+    - debug:
+        var: result.result_image_path

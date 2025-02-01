@@ -1,0 +1,18 @@
+namespace: my_namespace
+name: stable_diffusion
+version: 1.0.0
+readme: README.md
+description: A collection to generate images using Stable Diffusion XL.
+authors:
+  - quarterturn <quarterturn@matrixwide.com>
+license:
+  - non-commercial use only
+tags:
+  - ai
+  - machine learning
+  - image generation
+dependencies: {}
+repository: https://github.com/quarterturn/ansible-sdxl
+documentation: https://github.com/quarterturn/ansible-sdxl/blob/main/docs/index.rst
+homepage: https://github.com/quarterturn/ansible-sdxl
+issues: https://github.com/quarterturn/ansible-sdxl/issues
